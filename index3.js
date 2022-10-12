@@ -68,6 +68,7 @@ function shuffle(array) {
 }
 
 function onFormSubmit(e) {
+
     let numberr
     numberr = parseFloat(number1.value)
     if (numberr > 7) {
@@ -78,6 +79,7 @@ function onFormSubmit(e) {
             for (var i = 0; i < role89final.length; i++) {
                 document.writeln(i + 1, '. ', role89final[i], '<br>')
             }
+
         } else if (numberr == 9) { //5 dan, 2 soi, 1 tri, 1 bao ve
             var role89plus = [role[0]]
             let role89final = role89.concat(role89plus)
@@ -163,6 +165,7 @@ function onFormSubmit(e) {
                 document.write(i + 1, '. ', role19final[i], '<br>')
             }
         }
+        document.write('<button type="submit" class="glow-on-hover"><a href="index.html">TRỞ LẠI TRANG CHỦ</a></button> ')
     } else {
         alert("Số lượng người chơi từ 6 - 23 người");
     }
